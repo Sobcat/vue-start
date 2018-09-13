@@ -26,14 +26,17 @@
     <ol>
       <todo v-for="item in groceList" v-bind:message5="item" v-bind:key="item.id"></todo>
     </ol>
+    
   </div>
 </template>
 
 <script>
+// 引入组件
 import Todo from "./components/todo.vue";
 
 export default {
   name: "app",
+  // 组件中 data 必须是一个函数
   data() {
     return {
       message: "Hello Workd!",
@@ -71,9 +74,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
- 
 }
- li {
-    list-style: none;
-  }
+li {
+  list-style: none;
+}
 </style>
